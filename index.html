@@ -67,6 +67,7 @@
           <div>
             <h1 class="text-6xl font-bold tracking-tight leading-tight font-nome">DYANNE<br>MENEZES</h1>
             <p class="text-xl text-slate-300 mt-2">ADVOGADA</p>
+            <p class="text-md text-slate-300 mt-1">OAB/BA 81.939</p>
           </div>
         </div>
         <div class="mt-6 text-slate-300 space-y-2 border-t border-b border-white border-opacity-20 py-4">
@@ -167,27 +168,18 @@
 
       areas.forEach(area => {
         area.addEventListener('click', () => {
-          // Verifica se o item clicado já está ativo
-          const isActive = area.classList.contains('active');
-
-          // Primeiro, remove a classe 'active' de todos os itens
-          areas.forEach(item => {
-            item.classList.remove('active');
-          });
-
-          // Se o item clicado não estava ativo, ativa-o
-          if (!isActive) {
+          // Verifica se o item clicado já está ativo.
+          if (area.classList.contains('active')) {
+            // Se estiver, apenas o fecha.
+            area.classList.remove('active');
+          } else {
+            // Se não estiver, primeiro fecha todos os outros...
+            areas.forEach(item => {
+              item.classList.remove('active');
+            });
+            // ...e então abre o que foi clicado.
             area.classList.add('active');
           }
-        });
-        
-        // Para desktop, manter a interatividade no hover
-        area.addEventListener('mouseenter', () => {
-            area.classList.add('active');
-        });
-
-        area.addEventListener('mouseleave', () => {
-            area.classList.remove('active');
         });
       });
     });
