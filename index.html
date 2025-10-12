@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DYANNE MENEZES | ADVOGADA</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8f9fa;
+    }
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    /* Classe específica para a nova fonte do nome */
+    .font-nome {
+      font-family: 'Cormorant Garamond', serif;
+    }
+    .marsala-bg {
+      background-color: #60221c;
+    }
+    .gold-text {
+      color: #d1b681;
+    }
+    .gold-border {
+      border-color: #d1b681;
+    }
+    .gold-hover:hover {
+      color: #d1b681;
+    }
+    /* Estilo para a explicação que aparece */
+    .area-item .explanation {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.5s ease-in-out;
+    }
+    /* Quando o item estiver ativo (clicado), mostra a explicação */
+    .area-item.active .explanation {
+      max-height: 200px; /* Altura suficiente para o texto */
+      opacity: 1;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body class="text-gray-800">
+
+  <!-- Cabeçalho -->
+  <header id="inicio" class="bg-white shadow-md">
+    <div class="container mx-auto flex flex-col md:flex-row">
+      <!-- Coluna da Imagem - Altura removida para permitir que o flexbox ajuste -->
+      <div class="md:w-1/2 w-full h-[400px] md:h-auto">
+        <img src="foto-advogada.jpg" alt="Foto de Dyanne Menezes" class="w-full h-full object-cover object-top">
+      </div>
+      <!-- Coluna do Texto -->
+      <div class="md:w-1/2 w-full p-8 md:p-12 text-center marsala-bg text-white flex flex-col justify-center">
+        <div class="flex flex-col items-center justify-center">
+          <img src="identidadevisual.png" alt="Logo Dyanne Menezes" class="h-32 w-auto mb-5">
+          <div>
+            <h1 class="text-6xl font-bold tracking-tight leading-tight font-nome">DYANNE<br>MENEZES</h1>
+            <p class="text-xl text-slate-300 mt-2">ADVOGADA</p>
+          </div>
+        </div>
+        <div class="mt-6 text-slate-300 space-y-2 border-t border-b border-white border-opacity-20 py-4">
+          <p>Pós-graduada em Licitações e Contratos Públicos</p>
+          <p class="font-semibold gold-text">Direito Público | Cível | Condominial | Consumidor</p>
+        </div>
+        <div class="mt-8">
+          <a href="https://wa.me/5571996430583" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105 duration-300 shadow-xl inline-block">
+            <i class="fab fa-whatsapp mr-2"></i> Fale Comigo no WhatsApp
+          </a>
+          <p class="mt-4 text-slate-400">Atendimento online para todo o Brasil</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navegação -->
+  <nav class="bg-white text-gray-700 py-3 sticky top-0 z-10 shadow-sm">
+    <div class="container mx-auto flex justify-center flex-wrap gap-x-8 gap-y-2 px-4 font-semibold">
+      <a href="#inicio" class="gold-hover transition-colors duration-300">Início</a>
+      <a href="#areas" class="gold-hover transition-colors duration-300">Atuação</a>
+      <a href="#sobre" class="gold-hover transition-colors duration-300">Sobre</a>
+      <a href="#contato" class="gold-hover transition-colors duration-300">Contato</a>
+    </div>
+  </nav>
+
+  <!-- Conteúdo Principal -->
+  <main class="container mx-auto mt-12 px-4 md:px-0">
+    
+    <!-- Seção Áreas de Atuação -->
+    <section id="areas" class="mb-12 bg-white p-8 rounded-lg shadow-xl scroll-mt-24">
+      <h2 class="text-4xl font-bold text-slate-800 border-b-2 gold-border pb-3 mb-6 flex items-center gap-4"><i class="fas fa-scale-balanced text-slate-500"></i>Como posso ajudar?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+        <!-- Item Interativo -->
+        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
+          <i class="fas fa-gavel text-4xl gold-text mb-3"></i>
+          <h3 class="text-xl font-bold text-slate-800">Direito Público</h3>
+          <p class="explanation text-gray-600 text-sm text-left">Atuação na defesa dos seus direitos em face do Estado, incluindo a resolução de questões ligadas a concursos públicos, processos administrativos, licitações e contratos com o governo, garantindo que as regras sejam cumpridas de forma justa.</p>
+        </div>
+        <!-- Item Interativo -->
+        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
+          <i class="fas fa-file-contract text-4xl gold-text mb-3"></i>
+          <h3 class="text-xl font-bold text-slate-800">Direito Cível</h3>
+          <p class="explanation text-gray-600 text-sm text-left">Trata das relações entre pessoas e empresas, abordando questões como elaboração e revisão de contratos, obrigações e responsabilidade civil (indenizações por danos morais e materiais).</p>
+        </div>
+        <!-- Item Interativo -->
+        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
+          <i class="fas fa-building-user text-4xl gold-text mb-3"></i>
+          <h3 class="text-xl font-bold text-slate-800">Direito Condominial</h3>
+          <p class="explanation text-gray-600 text-sm text-left">Assessoria jurídica para condomínios e condôminos, tratando de assuntos como a cobrança de inadimplentes, a correta aplicação da convenção e do regimento interno.</p>
+        </div>
+        <!-- Item Interativo -->
+        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
+          <i class="fas fa-handshake text-4xl gold-text mb-3"></i>
+          <h3 class="text-xl font-bold text-slate-800">Direito do Consumidor</h3>
+          <p class="explanation text-gray-600 text-sm text-left">Protege o cidadão em suas relações de consumo, garantindo direitos em casos de produtos com defeito, cobranças indevidas e propaganda enganosa.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção Sobre Mim -->
+    <section id="sobre" class="mb-12 bg-white p-8 rounded-lg shadow-xl scroll-mt-24">
+      <h2 class="text-4xl font-bold text-slate-800 border-b-2 gold-border pb-3 mb-6 flex items-center gap-4"><i class="fas fa-user-tie text-slate-500"></i>Trajetória e Compromisso</h2>
+      <p class="text-gray-700 leading-relaxed text-lg text-justify">
+        Com uma trajetória pautada na dedicação e na busca incessante por conhecimento, minha missão é oferecer uma advocacia moderna, ética e focada em resultados. Graduada em Direito pela UniFTC e Pós-graduada em Licitações e Contratos Públicos pela UNINASSAU, alio uma sólida formação acadêmica à experiência prática adquirida em importantes instituições, como o Tribunal de Justiça do Estado da Bahia. Minha atuação é marcada pela comunicação clara, organização e um profundo compromisso em encontrar as soluções mais eficientes para os desafios jurídicos de cada cliente, contribuindo de forma positiva para a resolução de seus conflitos e para a garantia de seus direitos.
+      </p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="mb-12 marsala-bg text-white p-8 rounded-lg shadow-xl scroll-mt-24 text-center">
+      <h2 class="text-4xl font-bold border-b-2 border-white border-opacity-50 pb-3 mb-6 inline-block">Entre em Contato</h2>
+      <p class="text-slate-200 max-w-xl mx-auto mb-8">Estou à disposição para analisar seu caso e oferecer a melhor solução jurídica. Envie uma mensagem para agendar uma consulta.</p>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+        <div class="text-lg space-y-4 text-left">
+          <p><i class="fas fa-phone fa-fw mr-2 text-white opacity-80"></i><a href="tel:+5571996430583" class="hover:underline">+55 71 99643-0583</a></p>
+          <p><i class="fas fa-envelope fa-fw mr-2 text-white opacity-80"></i><a href="mailto:dyannemenezes@hotmail.com" class="hover:underline">dyannemenezes@hotmail.com</a></p>
+          <p><i class="fas fa-map-marker-alt fa-fw mr-2 text-white opacity-80"></i>Salvador - BA (Atendimento online)</p>
+          <p><i class="fab fa-linkedin fa-fw mr-2 text-white opacity-80"></i><a href="https://www.linkedin.com/in/dyanne-silva" target="_blank" class="hover:underline">/in/dyanne-silva</a></p>
+          <p><i class="fab fa-instagram fa-fw mr-2 text-white opacity-80"></i><a href="https://www.instagram.com/dyannemenezes" target="_blank" class="hover:underline">@dyannemenezes</a></p>
+        </div>
+      </div>
+      <a href="https://wa.me/5571996430583" target="_blank" class="mt-10 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105 duration-300 shadow-xl inline-block">
+        <i class="fab fa-whatsapp mr-2"></i> Agende sua Consulta
+      </a>
+    </section>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-200 text-gray-700 text-center p-6">
+    <p>&copy; 2025 Dyanne Menezes. Todos os direitos reservados.</p>
+    <p class="text-gray-600 text-sm mt-1">Desenvolvido com tecnologia de ponta para uma presença digital forte.</p>
+  </footer>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const areas = document.querySelectorAll('.area-item');
+
+      areas.forEach(area => {
+        area.addEventListener('click', () => {
+          // Verifica se o item clicado já está ativo
+          const isActive = area.classList.contains('active');
+
+          // Primeiro, remove a classe 'active' de todos os itens
+          areas.forEach(item => {
+            item.classList.remove('active');
+          });
+
+          // Se o item clicado não estava ativo, ativa-o
+          if (!isActive) {
+            area.classList.add('active');
+          }
+        });
+        
+        // Para desktop, manter a interatividade no hover
+        area.addEventListener('mouseenter', () => {
+            area.classList.add('active');
+        });
+
+        area.addEventListener('mouseleave', () => {
+            area.classList.remove('active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
+
