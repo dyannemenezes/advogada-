@@ -1,190 +1,116 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DYANNE MENEZES | ADVOGADA</title>
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
-  <!-- Font Awesome for Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f8f9fa;
-    }
-    h1, h2, h3 {
-      font-family: 'Playfair Display', serif;
-    }
-    /* Classe específica para a nova fonte do nome */
-    .font-nome {
-      font-family: 'Cormorant Garamond', serif;
-    }
-    .marsala-bg {
-      background-color: #60221c;
-    }
-    .gold-text {
-      color: #d1b681;
-    }
-    .gold-border {
-      border-color: #d1b681;
-    }
-    .gold-hover:hover {
-      color: #d1b681;
-    }
-    /* Estilo para a explicação que aparece */
-    .area-item .explanation {
-      max-height: 0;
-      opacity: 0;
-      overflow: hidden;
-      transition: all 0.5s ease-in-out;
-    }
-    /* Quando o item estiver ativo (clicado), mostra a explicação */
-    .area-item.active .explanation {
-      max-height: 200px; /* Altura suficiente para o texto */
-      opacity: 1;
-      margin-top: 1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#262E41">
+  <title>Menezes Advocacia &amp; Consultoria Jurídica</title>
+  <meta name="description" content="Menezes Advocacia &amp; Consultoria Jurídica. Atuação em Direito do Consumidor, Público, Cível e Condominial. Atendimento online para todo o Brasil.">
+  <meta property="og:title" content="Menezes Advocacia &amp; Consultoria Jurídica">
+  <meta property="og:description" content="Por trás de cada processo, existe uma história real. Advocacia com excelência, empatia e ética. Atendimento online em todo o Brasil.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" type="image/png" href="assets/symbol-oficial.png">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="text-gray-800">
-
-  <!-- Cabeçalho -->
-  <header id="inicio" class="bg-white shadow-md">
-    <div class="container mx-auto flex flex-col md:flex-row">
-      <!-- Coluna da Imagem - Altura removida para permitir que o flexbox ajuste -->
-      <div class="md:w-1/2 w-full h-[400px] md:h-auto">
-        <img src="foto-advogada.jpg" alt="Foto de Dyanne Menezes" class="w-full h-full object-cover object-top">
-      </div>
-      <!-- Coluna do Texto -->
-      <div class="md:w-1/2 w-full p-8 md:p-12 text-center marsala-bg text-white flex flex-col justify-center">
-        <div class="flex flex-col items-center justify-center">
-          <img src="identidadevisual.png" alt="Logo Dyanne Menezes" class="h-32 w-auto mb-5">
-          <div>
-            <h1 class="text-6xl font-bold tracking-tight leading-tight font-nome">DYANNE<br>MENEZES</h1>
-            <p class="text-xl text-slate-300 mt-2">ADVOGADA</p>
-            <p class="text-md text-slate-300 mt-1">OAB/BA 81.939</p>
-          </div>
-        </div>
-        <div class="mt-6 text-slate-300 space-y-2 border-t border-b border-white border-opacity-20 py-4">
-          <p>Pós-graduada em Licitações e Contratos Públicos</p>
-          <p class="font-semibold gold-text">Direito Público | Cível | Condominial | Consumidor</p>
-        </div>
-        <div class="mt-8">
-          <a href="https://wa.me/5571996430583" target="_blank" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105 duration-300 shadow-xl inline-block">
-            <i class="fab fa-whatsapp mr-2"></i> Fale Comigo no WhatsApp
-          </a>
-          <p class="mt-4 text-slate-400">Atendimento online para todo o Brasil</p>
-        </div>
-      </div>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Menezes Advocacia e Consultoria Jurídica — início">
+        <img src="assets/logo-oficial.png" alt="Menezes Advocacia &amp; Consultoria Jurídica" width="1920" height="1080">
+      </a>
+      <nav aria-label="Navegação principal">
+        <a href="#escritorio">O escritório</a>
+        <a href="#sobre">A advogada</a>
+        <a href="#areas">Atuação</a>
+        <a href="#atendimento">Atendimento</a>
+        <a class="nav-contact" href="#contato">Contato <span aria-hidden="true">↗</span></a>
+      </nav>
     </div>
   </header>
 
-  <!-- Navegação -->
-  <nav class="bg-white text-gray-700 py-3 sticky top-0 z-10 shadow-sm">
-    <div class="container mx-auto flex justify-center flex-wrap gap-x-8 gap-y-2 px-4 font-semibold">
-      <a href="#inicio" class="gold-hover transition-colors duration-300">Início</a>
-      <a href="#areas" class="gold-hover transition-colors duration-300">Atuação</a>
-      <a href="#sobre" class="gold-hover transition-colors duration-300">Sobre</a>
-      <a href="#contato" class="gold-hover transition-colors duration-300">Contato</a>
-    </div>
-  </nav>
+  <main id="conteudo">
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="line" aria-hidden="true"></span> Excelência · Empatia · Ética</p>
+          <h1 id="hero-title">Toda história<br>merece ser<br><em>defendida.</em></h1>
+          <p class="hero-description">Orientação e defesa em Direito do Consumidor, Público, Cível e Condominial. Do primeiro contato à análise do seu caso, clareza para decidir e cuidado com a sua história.</p>
+          <div class="hero-actions"><a class="button button-brand" href="https://wa.me/5571996430583" target="_blank" rel="noopener noreferrer">Falar com o escritório <span aria-hidden="true">↗</span></a><a class="text-link" href="#areas">Conheça nossa atuação <span aria-hidden="true">↓</span></a></div>
+          <p class="hero-note">Salvador, Bahia <span aria-hidden="true">/</span> Atendimento online em todo o Brasil</p>
+        </div>
+        <div class="hero-identity" aria-hidden="true"><img src="assets/symbol-oficial.png" alt="" width="1920" height="2160"></div>
+      </div>
+    </section>
 
-  <!-- Conteúdo Principal -->
-  <main class="container mx-auto mt-12 px-4 md:px-0">
-    
-    <!-- Seção Áreas de Atuação -->
-    <section id="areas" class="mb-12 bg-white p-8 rounded-lg shadow-xl scroll-mt-24">
-      <h2 class="text-4xl font-bold text-slate-800 border-b-2 gold-border pb-3 mb-6 flex items-center gap-4"><i class="fas fa-scale-balanced text-slate-500"></i>Como posso ajudar?</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
-        <!-- Item Interativo -->
-        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
-          <i class="fas fa-gavel text-4xl gold-text mb-3"></i>
-          <h3 class="text-xl font-bold text-slate-800">Direito Público</h3>
-          <p class="explanation text-gray-600 text-sm text-left">Atuação na defesa dos seus direitos em face do Estado, incluindo a resolução de questões ligadas a concursos públicos, processos administrativos, licitações e contratos com o governo, garantindo que as regras sejam cumpridas de forma justa.</p>
-        </div>
-        <!-- Item Interativo -->
-        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
-          <i class="fas fa-file-contract text-4xl gold-text mb-3"></i>
-          <h3 class="text-xl font-bold text-slate-800">Direito Cível</h3>
-          <p class="explanation text-gray-600 text-sm text-left">Trata das relações entre pessoas e empresas, abordando questões como elaboração e revisão de contratos, obrigações e responsabilidade civil (indenizações por danos morais e materiais).</p>
-        </div>
-        <!-- Item Interativo -->
-        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
-          <i class="fas fa-building-user text-4xl gold-text mb-3"></i>
-          <h3 class="text-xl font-bold text-slate-800">Direito Condominial</h3>
-          <p class="explanation text-gray-600 text-sm text-left">Assessoria jurídica para condomínios e condôminos, tratando de assuntos como a cobrança de inadimplentes, a correta aplicação da convenção e do regimento interno.</p>
-        </div>
-        <!-- Item Interativo -->
-        <div class="area-item bg-gray-50 p-6 rounded-lg text-center border border-gray-200 cursor-pointer hover:shadow-md transition-shadow">
-          <i class="fas fa-handshake text-4xl gold-text mb-3"></i>
-          <h3 class="text-xl font-bold text-slate-800">Direito do Consumidor</h3>
-          <p class="explanation text-gray-600 text-sm text-left">Protege o cidadão em suas relações de consumo, garantindo direitos em casos de produtos com defeito, cobranças indevidas e propaganda enganosa.</p>
+    <nav class="practice-shortcuts" aria-label="Acesso rápido às áreas de atuação"><div class="container">
+      <a href="#consumidor"><span>01 /</span> Consumidor <span aria-hidden="true">↗</span></a>
+      <a href="#publico"><span>02 /</span> Direito Público <span aria-hidden="true">↗</span></a>
+      <a href="#civel"><span>03 /</span> Direito Cível <span aria-hidden="true">↗</span></a>
+      <a href="#condominial"><span>04 /</span> Condominial <span aria-hidden="true">↗</span></a>
+    </div></nav>
+
+
+
+
+
+
+
+
+    <section id="escritorio" class="section office" aria-labelledby="escritorio-title">
+      <div class="container"><div class="office-intro"><div><p class="eyebrow">01 / O escritório</p><h2 id="escritorio-title">Firmeza técnica.<br><em>Cuidado humano.</em></h2></div><div><p>O Menezes Advocacia &amp; Consultoria Jurídica nasceu com o propósito de aproximar as pessoas da justiça. Com sede em Salvador e atendimento online, atua na defesa de direitos e na orientação de cidadãos, empresas e condomínios.</p><p id="missao">Nossa missão é unir rigor técnico e acolhimento, traduzindo a complexidade jurídica em orientação clara.</p><p id="visao">Nossa visão é construir um legado de confiança e ser referência pela união entre preparo e humanidade.</p></div></div>
+        
+      </div>
+    </section>
+
+    <section id="sobre" class="section about" aria-labelledby="sobre-title">
+      <div class="container about-grid">
+        <figure class="about-portrait">
+          <img src="foto-advogada.jpeg" alt="Dyanne Menezes, fundadora e advogada principal do Menezes Advocacia e Consultoria Jurídica" width="854" height="1280" loading="lazy">
+        </figure>
+        <div class="about-copy">
+          <div class="about-heading"><p class="eyebrow">02 / A advogada</p><h2 id="sobre-title">Dyanne <em>Menezes.</em></h2><p class="founder-role">Fundadora e advogada principal</p><p class="registration">OAB/BA 81.939</p></div>
+          <p class="lead">A defesa de pessoas como propósito.<br>O conhecimento como compromisso.</p><p>Graduada em Direito pela UniFTC, Dyanne construiu sua trajetória com passagem por escritórios de advocacia, fóruns e pelo Tribunal de Justiça da Bahia.</p><p>À frente do Menezes Advocacia &amp; Consultoria Jurídica, une preparação técnica e comunicação acessível para que cada pessoa compreenda sua situação e os caminhos possíveis para sua demanda.</p>
+          <dl class="education"><div><dt>Graduação em Direito</dt><dd>UniFTC · Salvador, BA</dd></div><div><dt>Pós-graduação em Licitações e Contratos Públicos</dt><dd>UNINASSAU · Concluída</dd></div><div><dt>Pós-graduação em Direito Médico e da Saúde</dt><dd>LEGALE Educacional · Em curso</dd></div></dl>
         </div>
       </div>
     </section>
 
-    <!-- Seção Sobre Mim -->
-    <section id="sobre" class="mb-12 bg-white p-8 rounded-lg shadow-xl scroll-mt-24">
-      <h2 class="text-4xl font-bold text-slate-800 border-b-2 gold-border pb-3 mb-6 flex items-center gap-4"><i class="fas fa-user-tie text-slate-500"></i>Trajetória e Compromisso</h2>
-      <p class="text-gray-700 leading-relaxed text-lg text-justify">
-        Com uma trajetória pautada na dedicação e na busca incessante por conhecimento, minha missão é oferecer uma advocacia moderna, ética e focada em resultados. Graduada em Direito pela UniFTC e Pós-graduada em Licitações e Contratos Públicos pela UNINASSAU, alio uma sólida formação acadêmica à experiência prática adquirida em importantes instituições, como o Tribunal de Justiça do Estado da Bahia. Minha atuação é marcada pela comunicação clara, organização e um profundo compromisso em encontrar as soluções mais eficientes para os desafios jurídicos de cada cliente, contribuindo de forma positiva para a resolução de seus conflitos e para a garantia de seus direitos.
-      </p>
-    </section>
+    <section class="section commitments" aria-labelledby="commitments-title"><div class="container"><p class="eyebrow">Nossa forma de atuar</p><h2 id="commitments-title">O cuidado está em cada detalhe.</h2><div id="valores" class="office-values"><article><h3>Excelência</h3><p>Estudo, preparação e atenção a cada demanda.</p></article><article><h3>Empatia</h3><p>Escuta para compreender a história por trás do caso.</p></article><article><h3>Ética</h3><p>Integridade, responsabilidade e transparência em cada decisão.</p></article></div><a class="button button-brand" href="#contato">Converse com o escritório <span aria-hidden="true">↗</span></a></div></section>
 
-    <!-- Seção Contato -->
-    <section id="contato" class="mb-12 marsala-bg text-white p-8 rounded-lg shadow-xl scroll-mt-24 text-center">
-      <h2 class="text-4xl font-bold border-b-2 border-white border-opacity-50 pb-3 mb-6 inline-block">Entre em Contato</h2>
-      <p class="text-slate-200 max-w-xl mx-auto mb-8">Estou à disposição para analisar seu caso e oferecer a melhor solução jurídica. Envie uma mensagem para agendar uma consulta.</p>
-      <div class="flex flex-col md:flex-row justify-center items-center gap-8">
-        <div class="text-lg space-y-4 text-left">
-          <p><i class="fas fa-phone fa-fw mr-2 text-white opacity-80"></i><a href="tel:+5571996430583" class="hover:underline">+55 71 99643-0583</a></p>
-          <p><i class="fas fa-envelope fa-fw mr-2 text-white opacity-80"></i><a href="mailto:dyannemenezes@hotmail.com" class="hover:underline">dyannemenezes@hotmail.com</a></p>
-          <p><i class="fas fa-map-marker-alt fa-fw mr-2 text-white opacity-80"></i>Salvador - BA (Atendimento online)</p>
-          <p><i class="fab fa-linkedin fa-fw mr-2 text-white opacity-80"></i><a href="https://www.linkedin.com/in/dyanne-silva" target="_blank" class="hover:underline">/in/dyanne-silva</a></p>
-          <p><i class="fab fa-instagram fa-fw mr-2 text-white opacity-80"></i><a href="https://www.instagram.com/dyannemenezes" target="_blank" class="hover:underline">@dyannemenezes</a></p>
-        </div>
+    <section id="areas" class="section areas" aria-labelledby="areas-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">03 / Áreas de atuação</p><h2 id="areas-title">Orientação para<br><em>cada necessidade.</em></h2></div><p>Orientação jurídica para cidadãos, consumidores, empresas e condomínios, com atenção às particularidades de cada caso.</p></div>
+        <div class="practice-cards"><article class="practice-card" id="consumidor"><div class="practice-meta"><span>01</span><span>ATUAÇÃO PRINCIPAL</span></div><h3>Direito do Consumidor</h3><p>Orientação e defesa nas relações com bancos, planos de saúde, telefonia, construtoras e outros fornecedores.</p><ul><li>Cobranças indevidas e falhas em serviços</li><li>Conflitos com planos de saúde</li><li>Descumprimento de ofertas e contratos</li></ul><a class="text-link" href="https://wa.me/5571996430583?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20em%20Direito%20do%20Consumidor." target="_blank" rel="noopener noreferrer" aria-label="Consultar o escritório sobre Direito do Consumidor">Consultar o escritório <span aria-hidden="true">↗</span></a></article><article class="practice-card" id="publico"><div class="practice-meta"><span>02</span><span>ATUAÇÃO PRINCIPAL</span></div><h3>Direito Público</h3><p>Atuação nas relações entre cidadãos e Administração Pública, com atenção aos atos e processos administrativos.</p><ul><li>Concursos públicos e direitos de servidores</li><li>Licitações e contratos públicos</li><li>Processos administrativos</li></ul><a class="text-link" href="https://wa.me/5571996430583?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20em%20Direito%20P%C3%BAblico." target="_blank" rel="noopener noreferrer" aria-label="Consultar o escritório sobre Direito Público">Consultar o escritório <span aria-hidden="true">↗</span></a></article><article class="practice-card" id="civel"><div class="practice-meta"><span>03</span><span>RELAÇÕES E CONTRATOS</span></div><h3>Direito Cível</h3><p>Assessoria nas relações entre pessoas e empresas, para compreender obrigações e lidar com conflitos.</p><ul><li>Elaboração e revisão de contratos</li><li>Responsabilidade civil</li><li>Danos morais e materiais</li></ul><a class="text-link" href="https://wa.me/5571996430583?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20em%20Direito%20C%C3%ADvel." target="_blank" rel="noopener noreferrer" aria-label="Consultar o escritório sobre Direito Cível">Consultar o escritório <span aria-hidden="true">↗</span></a></article><article class="practice-card" id="condominial"><div class="practice-meta"><span>04</span><span>ASSESSORIA JURÍDICA</span></div><h3>Direito Condominial</h3><p>Orientação para condomínios e condôminos na organização das relações e no tratamento de demandas.</p><ul><li>Inadimplência condominial</li><li>Convenção e regimento interno</li><li>Conflitos entre condôminos</li></ul><a class="text-link" href="https://wa.me/5571996430583?text=Ol%C3%A1%21%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20o%20atendimento%20em%20Direito%20Condominial." target="_blank" rel="noopener noreferrer" aria-label="Consultar o escritório sobre Direito Condominial">Consultar o escritório <span aria-hidden="true">↗</span></a></article></div>
+        <p class="areas-note">Não sabe em qual área sua situação se encaixa? <a href="#contato">Entre em contato e apresente sua demanda.</a></p>
       </div>
-      <a href="https://wa.me/5571996430583" target="_blank" class="mt-10 bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-105 duration-300 shadow-xl inline-block">
-        <i class="fab fa-whatsapp mr-2"></i> Agende sua Consulta
-      </a>
     </section>
 
+    <section id="atendimento" class="section service" aria-labelledby="atendimento-title">
+      <div class="container"><div class="section-heading"><div><p class="eyebrow">04 / Atendimento online</p><h2 id="atendimento-title">Perto de você,<br><em>onde você estiver.</em></h2></div><p>Um primeiro contato simples, seguido de uma consulta para compreender a sua demanda com atenção.</p></div>
+        <ol class="service-steps"><li><span class="step-number">01</span><h3>Conte sua situação</h3><p>Fale pelo WhatsApp ou e-mail e apresente um breve resumo do que precisa.</p></li><li><span class="step-number">02</span><h3>Agende sua consulta</h3><p>Combine a disponibilidade e as condições do atendimento online com o escritório.</p></li><li><span class="step-number">03</span><h3>Entenda os caminhos</h3><p>Na consulta, apresente sua história e os documentos para receber orientação sobre os próximos passos.</p></li></ol>
+        <a class="text-link" href="https://wa.me/5571996430583" target="_blank" rel="noopener noreferrer">Solicitar informações sobre a consulta <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+    <section id="duvidas" class="section faq" aria-labelledby="duvidas-title">
+      <div class="container faq-grid"><div><p class="eyebrow">05 / Dúvidas frequentes</p><h2 id="duvidas-title">Antes de<br><em>conversarmos.</em></h2><p>Informações para você dar o primeiro passo com mais clareza.</p></div><div class="faq-list">
+        <details><summary>O atendimento é apenas em Salvador?<span class="expand" aria-hidden="true"></span></summary><p>Não. O escritório está sediado em Salvador, na Bahia, e realiza atendimento online para todo o Brasil.</p></details>
+        <details><summary>Como solicito uma consulta?<span class="expand" aria-hidden="true"></span></summary><p>Entre em contato pelo WhatsApp ou e-mail e faça um breve relato da sua situação. O escritório informará a disponibilidade e as condições para agendar a consulta online.</p></details>
+        <details><summary>O que devo organizar para a consulta?<span class="expand" aria-hidden="true"></span></summary><p>Tenha em mãos um resumo do ocorrido, as datas relevantes e os documentos relacionados, como contratos, comunicações e comprovantes. A documentação necessária será orientada conforme a sua demanda.</p></details>
+        <details><summary>Posso procurar orientação antes de existir um processo?<span class="expand" aria-hidden="true"></span></summary><p>Sim. A consultoria jurídica também pode ajudar na análise de contratos, no esclarecimento de obrigações e na avaliação dos caminhos possíveis para uma situação.</p></details>
+      </div></div>
+    </section>
+
+    <section id="contato" class="section contact" aria-labelledby="contato-title">
+      <div class="container contact-grid"><div><p class="eyebrow">06 / Vamos conversar</p><h2 id="contato-title">O primeiro passo<br>é <em>ser ouvido.</em></h2><p>Entre em contato para apresentar sua demanda e solicitar o agendamento de uma consulta.</p><a class="button button-brand" href="https://wa.me/5571996430583" target="_blank" rel="noopener noreferrer">Falar com o escritório <span aria-hidden="true">↗</span></a><p class="contact-note">Atendimento online para todo o Brasil.</p><a class="contact-faq" href="#duvidas">Veja as dúvidas sobre o atendimento ↑</a></div>
+        <div class="contact-info"><div><h3>WhatsApp</h3><a href="https://wa.me/5571996430583" target="_blank" rel="noopener noreferrer">(71) 99643-0583 <span aria-hidden="true">↗</span></a></div><div><h3>E-mail</h3><a href="mailto:dyannemenezes.adv@outlook.com">dyannemenezes.adv@outlook.com</a></div><div><h3>Localização</h3><p>Salvador · Bahia</p></div><div class="social-links"><a href="https://www.instagram.com/dyannemenezes/" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a><a href="https://www.linkedin.com/in/dyanne-silva" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a></div></div>
+      </div>
+    </section>
   </main>
 
-  <!-- Rodapé -->
-  <footer class="bg-gray-200 text-gray-700 text-center p-6">
-    <p>&copy; 2025 Dyanne Menezes. Todos os direitos reservados.</p>
-    <p class="text-gray-600 text-sm mt-1">Desenvolvido com tecnologia de ponta para uma presença digital forte.</p>
-  </footer>
-  
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const areas = document.querySelectorAll('.area-item');
-
-      areas.forEach(area => {
-        area.addEventListener('click', () => {
-          // Verifica se o item clicado já está ativo.
-          if (area.classList.contains('active')) {
-            // Se estiver, apenas o fecha.
-            area.classList.remove('active');
-          } else {
-            // Se não estiver, primeiro fecha todos os outros...
-            areas.forEach(item => {
-              item.classList.remove('active');
-            });
-            // ...e então abre o que foi clicado.
-            area.classList.add('active');
-          }
-        });
-      });
-    });
-  </script>
-
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="brand" href="#inicio" aria-label="Menezes Advocacia e Consultoria Jurídica — voltar ao início"><img src="assets/logo-oficial.png" alt="Menezes Advocacia &amp; Consultoria Jurídica" width="1920" height="1080"></a><p>Excelência, Empatia e Ética.<br>Em cada história, em cada decisão.</p></div><nav class="footer-nav" aria-label="Navegação do rodapé"><a href="#escritorio">O escritório</a><a href="#sobre">A advogada</a><a href="#areas">Áreas de atuação</a><a href="#duvidas">Dúvidas frequentes</a><a href="#contato">Contato</a></nav><div class="footer-bottom"><p>Dyanne Silva Menezes dos Santos Sociedade Individual de Advocacia<br>OAB/BA 81.939 · CNPJ 67.915.733/0001-27</p><p><a href="#inicio">Voltar ao início ↑</a><br>© 2026 Menezes Advocacia &amp; Consultoria Jurídica.<br>Todos os direitos reservados.</p></div></div></footer>
 </body>
 </html>
-
